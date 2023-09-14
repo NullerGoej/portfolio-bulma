@@ -46,11 +46,16 @@ section {
     background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.7));
 }
 
-.card-img {
+.card-image img {
     max-height: 300px;
     /* Adjust the height as needed */
     object-fit: cover;
     /* Ensure the image covers the entire container */
+    width: 100%;
+}
+
+.card {
+    line-height: 0 !important;
 }
 
 h1 {
@@ -58,7 +63,7 @@ h1 {
     font-size: 36px !important;
     font-weight: 500px !important;
     /* Adjust the font size as needed */
-    color: #333;
+    color: #333 !important;
     /* Choose your desired text color */
     text-transform: uppercase;
     /* Uppercase the text */
@@ -90,4 +95,32 @@ h1 {
 
 * {
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}
+
+.navbar-title {
+    font-size: 1.25rem !important;
+}
+
+.navbar-item {
+    color: #363636 !important;
+}
+
+.is-absolute {
+    position: absolute;
+}
+
+.is-bottom {
+    bottom: 0;
+}
+
+.is-left {
+    left: 0;
+}
+
+.is-right {
+    right: 0;
+}
+
+.is-top {
+    top: 0;
 }

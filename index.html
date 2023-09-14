@@ -6,17 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Bulma</title>
     <!-- Link to Bulma CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav class="navbar is-primary is-fixed-top has-background-transparent">
+    <nav class="navbar is-primary is-fixed-top has-background-transparent transparent-navbar">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">Moedekjaer</a>
+                <a class="navbar-item navbar-title" href="#">Moedekjaer</a>
                 <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNav">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -35,10 +35,10 @@
     </nav>
 
     <!-- Section 1 -->
-    <section id="section1" class="hero is-primary is-bold is-fullheight">
-        <div class="hero-body">
+    <section id="section1" class="hero is-primary is-bold vignette">
+        <div class="is-flex is-align-items-flex-end has-text-centered hero-body">
             <div class="container has-text-centered">
-                <h1 class="title is-size-1">Bastian Mødekjær</h1>
+                <h1 class="title text-border">Bastian Mødekjær</h1>
                 <p>
                     <span class="tag is-primary is-light">Webdeveloper</span>
                     <span class="tag is-link is-light">Softwaredeveloper</span>
@@ -50,7 +50,7 @@
     </section>
 
     <!-- Section 2 -->
-    <section id="section2" class="section is-fullheight">
+    <section id="section2" class="section is-flex is-justify-content-center is-align-items-center">
         <div class="container">
             <div class="columns">
                 <div class="column is-half">
@@ -69,33 +69,35 @@
     </section>
 
     <!-- Section 3 - Past Projects -->
-    <section id="section3" class="section is-fullheight">
+    <section id="section3" class="section is-flex is-justify-content-center is-align-items-center">
         <div class="container">
             <h1 class="title">Past Projects</h1>
-            <div class="columns">
-                <div class="column">
+            <div class="columns is-flex is-flex-direction-column is-align-items-centers">
+                <div class="column is-12">
                     <div class="card">
                         <div class="card-image">
-                            <img src="project1.png" alt="Project 1">
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4 has-text-light">Radio Moedekjaer</h3>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://radio.moedekjaer.dk" class="button is-primary">View</a>
+                            <div class="vignette">
+                                <img src="project1.png" alt="Project 1">
+                            </div>
+                            <div class="is-absolute is-bottom is-left py-4 px-4">
+                                <h3 class="title is-4 has-text-light">Radio Moedekjaer</h3>
+                            </div>
+                            <div class="is-absolute is-top is-right py-4 px-4">
+                                <a target="_blank" rel="noopener noreferrer" href="https://radio.moedekjaer.dk" class="button is-primary">View</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column">
+                <div class="column is-12">
                     <div class="card">
-                        <div class="card-image">
+                        <div class="card-image vignette">
                             <img src="project2.png" alt="Project 2">
-                        </div>
-                        <div class="card-content">
-                            <h3 class="title is-4 has-text-light">4thID</h3>
-                        </div>
-                        <div class="card-footer">
-                            <a href="https://4thid.us/forum" class="button is-primary">View</a>
+                            <div class="is-absolute is-bottom is-left py-4 px-4">
+                                <h3 class="title is-4 has-text-light">4thID</h3>
+                            </div>
+                            <div class="is-absolute is-top is-right py-4 px-4">
+                                <a target="_blank" rel="noopener noreferrer" href="https://4thid.us/forum" class="button is-primary">View</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -104,7 +106,7 @@
     </section>
 
     <!-- Section 4 - Contact Form -->
-    <section id="section4" class="section">
+    <section id="section4" class="section is-flex is-justify-content-center is-align-items-center">
         <div class="container">
             <h1 class="title">Contact Me</h1>
             <form onsubmit="alert('Email Definitely Sent!'); return false;">
@@ -138,7 +140,7 @@
     <footer class="footer has-background-light has-text-centered py-3">
         <div class="container">
             <p>&copy; 2023 <a href="https://moedekjaer.dk/" target="_blank" rel="noopener noreferrer">Moedekjaer</a> | Made with
-                <a href="https://bulma.com/" target="_blank" rel="noopener noreferrer">Bulma</a></p>
+                <a href="https://bulma.io/" target="_blank" rel="noopener noreferrer">Bulma</a></p>
         </div>
     </footer>
 
