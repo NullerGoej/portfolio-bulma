@@ -1,0 +1,93 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.transparent-navbar {
+    background-color: transparent !important;
+    transition: background-color 0.3s ease;
+}
+
+.filled-navbar {
+    transition: background-color 0.3s ease;
+}
+
+#section1 {
+    background-image: url("coding1.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section {
+    min-height: 100vh;
+}
+
+#section4 {
+    min-height: calc(100vh - 72px);
+}
+
+
+/* Vignette effect */
+
+.vignette {
+    position: relative;
+}
+
+.vignette::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, transparent 40%, rgba(0, 0, 0, 0.7));
+}
+
+.card-img {
+    max-height: 300px;
+    /* Adjust the height as needed */
+    object-fit: cover;
+    /* Ensure the image covers the entire container */
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px !important;
+    font-weight: 500px !important;
+    /* Adjust the font size as needed */
+    color: #333;
+    /* Choose your desired text color */
+    text-transform: uppercase;
+    /* Uppercase the text */
+    letter-spacing: 2px;
+    /* Adjust letter spacing as needed */
+    margin-bottom: 20px;
+    /* Add some spacing below the title */
+}
+
+.text-border {
+    /* Set the text color to white */
+    text-shadow: -1px -1px 0 #cfe2ff, /* Top left */
+    1px -1px 0 #cfe2ff, /* Top right */
+    -1px 1px 0 #cfe2ff, /* Bottom left */
+    1px 1px 0 #cfe2ff;
+    /* Bottom right */
+}
+
+.stylish-p {
+    font-size: 18px;
+    /* Adjust the font size as needed */
+    line-height: 1.6;
+    /* Adjust line height for better readability */
+    color: #333;
+    /* Text color */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    /* Add a subtle text shadow */
+}
+
+* {
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !important;
+}

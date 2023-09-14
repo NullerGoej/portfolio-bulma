@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Bulma</title>
+    <!-- Link to Bulma CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar is-primary is-fixed-top has-background-transparent">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">Moedekjaer</a>
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarNav">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div id="navbarNav" class="navbar-menu">
+                <div class="navbar-end">
+                    <a class="navbar-item" href="#section1">Home</a>
+                    <a class="navbar-item" href="#section2">About</a>
+                    <a class="navbar-item" href="#section3">Projects</a>
+                    <a class="navbar-item" href="#section4">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section 1 -->
+    <section id="section1" class="hero is-primary is-bold is-fullheight">
+        <div class="hero-body">
+            <div class="container has-text-centered">
+                <h1 class="title is-size-1">Bastian Mødekjær</h1>
+                <p>
+                    <span class="tag is-primary is-light">Webdeveloper</span>
+                    <span class="tag is-link is-light">Softwaredeveloper</span>
+                    <span class="tag is-danger is-light">Tech Passionate</span>
+                    <span class="tag is-success is-light">Gamer</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2 -->
+    <section id="section2" class="section is-fullheight">
+        <div class="container">
+            <div class="columns">
+                <div class="column is-half">
+                    <h1 class="title">About</h1>
+                    <p class="stylish-p">Hello! I'm Bastian, but you can call me Moe. I'm a 24-year-old computer science enthusiast from Denmark. With a passion for technology and gaming, I've always been drawn to the world of programming and software development.</p><br>
+                    <p class="stylish-p">In my academic journey, I've graduated with a degree in computer science, equipping me with the knowledge and skills to tackle a wide range of technical challenges. I currently reside in the beautiful city of Ishøj, Denmark, where
+                        I find inspiration for my projects and adventures.</p><br>
+                    <p class="stylish-p">My journey in the tech world is an ongoing adventure, and I'm excited to continue exploring new horizons, learning, and creating innovative solutions. Whether it's coding, gaming, or developing exciting projects, I'm always eager to
+                        embrace the challenges that come my way.</p>
+                </div>
+                <div class="column is-half has-text-centered">
+                    <img src="moe.png" alt="Bastian Mødekjær" width="500px" height="500px">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3 - Past Projects -->
+    <section id="section3" class="section is-fullheight">
+        <div class="container">
+            <h1 class="title">Past Projects</h1>
+            <div class="columns">
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="project1.png" alt="Project 1">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4 has-text-light">Radio Moedekjaer</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://radio.moedekjaer.dk" class="button is-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="project2.png" alt="Project 2">
+                        </div>
+                        <div class="card-content">
+                            <h3 class="title is-4 has-text-light">4thID</h3>
+                        </div>
+                        <div class="card-footer">
+                            <a href="https://4thid.us/forum" class="button is-primary">View</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4 - Contact Form -->
+    <section id="section4" class="section">
+        <div class="container">
+            <h1 class="title">Contact Me</h1>
+            <form onsubmit="alert('Email Definitely Sent!'); return false;">
+                <div class="field">
+                    <label class="label" for="name">Name</label>
+                    <div class="control">
+                        <input class="input" type="text" id="name" placeholder="Your Name" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="email">Email</label>
+                    <div class="control">
+                        <input class="input" type="email" id="email" placeholder="Your Email" required>
+                    </div>
+                </div>
+                <div class="field">
+                    <label class="label" for="message">Message</label>
+                    <div class="control">
+                        <textarea class="textarea" id="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button type="submit" class="button is-primary">Submit</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer has-background-light has-text-centered py-3">
+        <div class="container">
+            <p>&copy; 2023 <a href="https://moedekjaer.dk/" target="_blank" rel="noopener noreferrer">Moedekjaer</a> | Made with
+                <a href="https://bulma.com/" target="_blank" rel="noopener noreferrer">Bulma</a></p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
