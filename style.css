@@ -107,32 +107,36 @@ h1 {
     top: 0;
 }
 
-.navbar.is-primary .navbar-brand .navbar-link.is-active,
-.navbar.is-primary .navbar-brand .navbar-link:focus,
-.navbar.is-primary .navbar-brand .navbar-link:hover,
-.navbar.is-primary .navbar-brand>a.navbar-item.is-active,
-.navbar.is-primary .navbar-brand>a.navbar-item:focus,
-.navbar.is-primary .navbar-brand>a.navbar-item:hover {
+.navbar .navbar-brand .navbar-link.is-active,
+.navbar .navbar-brand .navbar-link:focus,
+.navbar .navbar-brand .navbar-link:hover,
+.navbar .navbar-brand>a.navbar-item.is-active,
+.navbar .navbar-brand>a.navbar-item:focus,
+.navbar .navbar-brand>a.navbar-item:hover {
     background-color: transparent !important;
 }
 
-.navbar.is-primary .navbar-end .navbar-link.is-active,
-.navbar.is-primary .navbar-end .navbar-link:focus,
-.navbar.is-primary .navbar-end .navbar-link:hover,
-.navbar.is-primary .navbar-end>a.navbar-item.is-active,
-.navbar.is-primary .navbar-end>a.navbar-item:focus,
-.navbar.is-primary .navbar-end>a.navbar-item:hover,
-.navbar.is-primary .navbar-start .navbar-link.is-active,
-.navbar.is-primary .navbar-start .navbar-link:focus,
-.navbar.is-primary .navbar-start .navbar-link:hover,
-.navbar.is-primary .navbar-start>a.navbar-item.is-active,
-.navbar.is-primary .navbar-start>a.navbar-item:focus,
-.navbar.is-primary .navbar-start>a.navbar-item:hover {
+.navbar .navbar-end .navbar-link.is-active,
+.navbar .navbar-end .navbar-link:focus,
+.navbar .navbar-end .navbar-link:hover,
+.navbar .navbar-end>a.navbar-item.is-active,
+.navbar .navbar-end>a.navbar-item:focus,
+.navbar .navbar-end>a.navbar-item:hover,
+.navbar .navbar-start .navbar-link.is-active,
+.navbar .navbar-start .navbar-link:focus,
+.navbar .navbar-start .navbar-link:hover,
+.navbar .navbar-start>a.navbar-item.is-active,
+.navbar .navbar-start>a.navbar-item:focus,
+.navbar .navbar-start>a.navbar-item:hover {
     background-color: transparent !important;
 }
 
 .button.is-primary {
     background-color: #0d6efd !important;
+}
+
+.navbar-menu {
+    background-color: transparent !important;
 }
 
 .tag {
