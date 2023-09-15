@@ -9,6 +9,7 @@ html {
 
 .filled-navbar {
     transition: background-color 0.3s ease;
+    background-color: #cfe2ff !important;
 }
 
 #section1 {
@@ -104,4 +105,56 @@ h1 {
 
 .is-top {
     top: 0;
+}
+
+.navbar.is-primary .navbar-brand .navbar-link.is-active,
+.navbar.is-primary .navbar-brand .navbar-link:focus,
+.navbar.is-primary .navbar-brand .navbar-link:hover,
+.navbar.is-primary .navbar-brand>a.navbar-item.is-active,
+.navbar.is-primary .navbar-brand>a.navbar-item:focus,
+.navbar.is-primary .navbar-brand>a.navbar-item:hover {
+    background-color: transparent !important;
+}
+
+.navbar.is-primary .navbar-end .navbar-link.is-active,
+.navbar.is-primary .navbar-end .navbar-link:focus,
+.navbar.is-primary .navbar-end .navbar-link:hover,
+.navbar.is-primary .navbar-end>a.navbar-item.is-active,
+.navbar.is-primary .navbar-end>a.navbar-item:focus,
+.navbar.is-primary .navbar-end>a.navbar-item:hover,
+.navbar.is-primary .navbar-start .navbar-link.is-active,
+.navbar.is-primary .navbar-start .navbar-link:focus,
+.navbar.is-primary .navbar-start .navbar-link:hover,
+.navbar.is-primary .navbar-start>a.navbar-item.is-active,
+.navbar.is-primary .navbar-start>a.navbar-item:focus,
+.navbar.is-primary .navbar-start>a.navbar-item:hover {
+    background-color: transparent !important;
+}
+
+.button.is-primary {
+    background-color: #0d6efd !important;
+}
+
+.tag {
+    color: #333 !important;
+    border: #333 solid 1px !important;
+    font-size: 0.75rem !important;
+    font-weight: 700 !important;
+    border-radius: 0.375rem !important;
+}
+
+.is-primary.is-light {
+    background-color: #cfe2ff !important;
+}
+
+.is-secondary.is-light {
+    background-color: #e2e3e5 !important;
+}
+
+.is-danger.is-light {
+    background-color: #f8d7da !important;
+}
+
+.is-success.is-light {
+    background-color: #d1e7dd !important;
 }
